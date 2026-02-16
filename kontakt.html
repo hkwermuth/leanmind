@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - LeanMind</title>
+    <meta name="description" content="Kontakt LeanMind for en uforpligtende snak. Ring på 42 40 39 39 eller send en besked. Hannah vender hurtigt tilbage.">
+    <link rel="canonical" href="https://www.leanmind.dk/kontakt.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.leanmind.dk/kontakt.html">
+    <meta property="og:title" content="Kontakt - LeanMind">
+    <meta property="og:description" content="Kontakt LeanMind – ring 42 40 39 39 eller send en besked. Uforpligtende snak om jeres udfordringer.">
+    <meta property="og:image" content="https://www.leanmind.dk/assets/Logo_stor.png">
+    <meta property="og:locale" content="da_DK">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html" aria-label="LeanMind">
+                <img src="assets/Logo_stor.png" alt="LeanMind logo">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="ydelser.html">Ydelser</a></li>
+                <li><a href="resultater.html">Resultater</a></li>
+                <li><a href="om-mig.html">Bag LeanMind</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a href="en/index.html" class="lang-switch">EN</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section contact-page-intro">
+            <h1>Kontakt</h1>
+            <p>Lad os tage en uforpligtende snak hvor jeg kan høre om jeres udfordringer. Du er velkommen til at udfylde formularen og jeg vender hurtigt tilbage. Du kan også ringe til mig på 42 40 39 39 eller skrive direkte til min mail: hannah@leanmind.dk</p>
+        </section>
+
+        <section class="content-section contact-page-form">
+            <div class="content-frame frame--pink contact-form-full">
+                <h2>Send mig en besked</h2>
+                <form class="contact-form" id="contactForm" action="mailto:hannah@leanmind.dk" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Navn *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Emne *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Besked *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send besked</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LeanMind</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

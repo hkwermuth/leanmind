@@ -1,0 +1,384 @@
+:root {
+  --brand: #D2691E; /* brunorange fra logo */
+  --logo-greenblue: #008080; /* RGB 0,128,128 – grøn/blå fra logo */
+  --strong-color: rgb(197, 90, 17); /* farve på fed skrift */
+  --pink: #F5E6E0; /* lyserød/sand */
+  --pink-light: #FBF5F2; /* endnu lysere ramme forsiden */
+  --card: #ffffff;
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #111111;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --radius: 18px;
+  --radius-img: 14px;
+  --max: 1200px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography (sort + spinkel) */
+h1, h2, h3 {
+  margin: 0 0 12px;
+  color: var(--logo-greenblue);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.12; }
+h2 { font-size: clamp(18px, 2.2vw, 24px); line-height: 1.25; }
+h3 { font-size: 18px; line-height: 1.3; }
+p { margin: 0 0 14px; color: var(--muted); }
+strong { font-weight: 600; color: var(--strong-color); }
+a { color: var(--text); text-decoration: none; }
+a:hover { color: var(--brand); }
+
+/* Header / nav */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+nav {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.logo { display: inline-flex; align-items: center; text-decoration: none; }
+.logo img { height: 66px; width: auto; display: block; }
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: var(--logo-greenblue);
+  font-weight: 300;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-size: 20px;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+.nav-menu a:hover {
+  color: var(--strong-color);
+  background: rgba(245, 230, 224, 0.45);
+  box-shadow: inset 0 0 0 2px var(--pink);
+}
+.nav-menu a.active {
+  color: var(--strong-color);
+  background: rgba(245, 230, 224, 0.45);
+  box-shadow: inset 0 0 0 2px var(--pink);
+}
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: transparent;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.mobile-menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  display: block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.mobile-menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+.mobile-menu-toggle.active span:nth-child(2) { opacity: 0; }
+.mobile-menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+/* Layout helpers */
+main { max-width: var(--max); margin: 0 auto; padding: 26px 32px 60px; }
+.page-header { padding: 10px 0 16px; }
+.page-header h1 { margin-bottom: 8px; }
+.ydelser-intro { margin-top: 34px; margin-bottom: 0; max-width: 720px; }
+.content-section { margin-top: 18px; }
+
+/* Frame (én farve, ingen ekstra kant) */
+.frame,
+.content-frame {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: clamp(18px, 3.2vw, 34px);
+  box-shadow: var(--shadow);
+}
+
+/* Lyserød ramme – samme farve overalt som på forsiden */
+.frame--pink {
+  background: var(--pink-light);
+}
+
+/* Home */
+.home-hero { padding-top: 10px; }
+.home-hero-frame { margin-top: 18px; margin-bottom: 20px; }
+.home-hero-frame.frame { padding: clamp(44px, 8vw, 92px) clamp(24px, 4vw, 48px); padding-bottom: 0; }
+.home-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: stretch;
+}
+.home-hero-text h1 { margin-bottom: 12px; }
+.home-hero-text h2 { margin-bottom: 18px; }
+
+.home-hero-media { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.home-hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+  border-radius: var(--radius-img);
+  display: block;
+}
+.home-hero-caption {
+  margin-top: 14px;
+  font-size: clamp(12px, 2.2vw, 14px);
+  color: var(--muted);
+  width: 100%;
+  max-width: 100%;
+}
+.home-hero-caption--right { text-align: right; }
+.home-hero-caption .photo-credit { font-size: 13px; opacity: 0.85; margin-top: 6px; }
+
+/* Kontaktblok (forside + undersider) – uden boks, på hvid baggrund, knapper */
+.contact-block {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.contact-block h3 { margin-bottom: 16px; }
+.contact-block-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.contact-block-actions a {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: var(--logo-greenblue);
+  color: #fff;
+  font-weight: 300;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.contact-block-actions a:hover {
+  background: #006666;
+  color: #fff;
+}
+.plain { color: var(--muted); }
+
+.home-contact { margin-top: 24px; }
+.home-contact .contact-block { margin-top: 0; padding-top: 0; border-top: 0; }
+
+/* Lists */
+.bullet-list {
+  list-style: none;
+  margin: 12px 0 16px;
+  padding-left: 0;
+}
+.bullet-list li {
+  margin: 10px 0;
+  color: var(--muted);
+  padding-left: 24px;
+  position: relative;
+}
+.bullet-list li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--text);
+}
+.bullet-list li strong { font-weight: 600; color: var(--strong-color); }
+.bullet-list--indent { padding-left: 24px; margin-left: 1.5cm; }
+.bullet-list--indent li { padding-left: 36px; }
+.contact-inline { margin-top: 14px; }
+
+/* Ydelser-boks: liste + billede (billede højre), samme farve som forsiden */
+.ydelser-box.frame { padding-top: 0; padding-bottom: 0; padding-left: 1cm; }
+.ydelser-box .bullet-list--indent { margin-left: 0; padding-left: 0; font-size: 0.95em; }
+.ydelser-box-inner {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 28px;
+  align-items: stretch;
+}
+.ydelser-box-image { display: flex; justify-content: flex-end; align-items: center; }
+.ydelser-image {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: var(--radius-img);
+  display: block;
+}
+@media (max-width: 760px) {
+  .ydelser-box-inner { grid-template-columns: 1fr; }
+  .ydelser-box-image { order: -1; justify-content: flex-start; }
+}
+
+/* Bag LeanMind: foto + tekst i boks med god plads */
+.about-box { padding: clamp(28px, 5vw, 48px) !important; }
+.about-box .about-new { margin: 0; }
+
+/* Cases – billede til højre */
+.case-list { display: grid; gap: 18px; }
+.case-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 18px;
+  align-items: center;
+}
+.case-body { order: 1; }
+.case-media { order: 2; display: flex; justify-content: center; }
+.case-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-img);
+  display: block;
+}
+.case-kicker { font-size: 14px; margin: 0 0 6px; color: var(--text); }
+.case-title { margin-top: 0; }
+.case-sections { display: grid; gap: 14px; margin-top: 8px; }
+.case-section h3 { margin-bottom: 6px; }
+.case-section p { margin-bottom: 0; }
+.case-card .bullet-list li {
+  line-height: 1.35;
+  margin: 5px 0;
+}
+.contact-title { margin-bottom: 10px; }
+
+/* Simple form + button styling (kontakt-side) */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 0;
+  cursor: pointer;
+  background: var(--logo-greenblue);
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+.btn-primary:hover { background: #006666; color: #fff; }
+.btn-primary:focus { outline: 2px solid rgba(0,0,0,0.35); outline-offset: 2px; }
+
+.contact-detailed { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.contact-item-detailed { margin-bottom: 12px; }
+.contact-item-detailed h3 { margin-bottom: 4px; }
+
+.contact-page-intro { margin-bottom: 8px; }
+.contact-page-intro p { max-width: 720px; }
+.contact-page-form .contact-form-full { width: 60%; max-width: 60%; }
+
+.contact-form { display: grid; gap: 12px; }
+.form-group { display: grid; gap: 6px; }
+.form-group label { font-weight: 300; }
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 12px;
+  font: inherit;
+  background: rgba(255,255,255,0.75);
+}
+
+/* Om mig (nyt layout) */
+.about-new-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.about-new-media { display: flex; justify-content: flex-start; }
+.about-new-image {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-img);
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .about-new-grid { grid-template-columns: 1fr; }
+  .about-new-image { width: 180px; }
+}
+
+.about-image-frame,
+.about-image-frame-large { display: inline-block; }
+.about-image,
+.about-image-large { border-radius: var(--radius-img); display: block; max-width: 100%; height: auto; }
+
+/* Footer */
+footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px 20px 30px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .home-hero-grid { grid-template-columns: 1fr; }
+  .case-grid { grid-template-columns: 1fr; }
+  .case-body, .case-media { order: unset; }
+  .contact-detailed { grid-template-columns: 1fr; }
+  .contact-block-actions { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 780px) {
+  .mobile-menu-toggle { display: flex; }
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background: #fff;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px 16px;
+    transition: left 0.25s ease;
+  }
+  .nav-menu.active { left: 0; }
+  .nav-menu a { width: 100%; text-align: center; padding: 14px 12px; }
+  .logo img { height: 52px; }
+}
+
+@media (max-width: 520px) {
+  body { font-size: 17px; }
+  .nav-menu a { font-size: 18px; }
+}
+

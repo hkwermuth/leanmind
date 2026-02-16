@@ -1,0 +1,149 @@
+{
+  "userStories": [
+    {
+      "actor": "Founder",
+      "story": "Som founder vil jeg udvikle og vedligeholde et stærkt LeanMind‑brand for at opnå tydelig positionering og tillid hos kunder og samarbejdspartnere.",
+      "goal": "Tydelig positionering og tillid hos kunder og samarbejdspartnere"
+    },
+    {
+      "actor": "Founder",
+      "story": "Som founder vil jeg kommunikere LeanMinds værdier, tilgang og resultater klart for at opnå større synlighed og flere relevante henvendelser.",
+      "goal": "Større synlighed og flere relevante henvendelser"
+    },
+    {
+      "actor": "Konsulent",
+      "story": "Som konsulent vil jeg analysere eksisterende processer i organisationer for at opnå et faktabaseret grundlag for forbedringer.",
+      "goal": "Faktabaseret grundlag for forbedringer"
+    },
+    {
+      "actor": "Konsulent",
+      "story": "Som konsulent vil jeg facilitere tværgående workshops for at opnå fælles forståelse, ejerskab og realistiske løsninger.",
+      "goal": "Fælles forståelse, ejerskab og realistiske løsninger"
+    },
+    {
+      "actor": "Konsulent",
+      "story": "Som konsulent vil jeg identificere spild, flaskehalse og forbedringsmuligheder for at opnå mere effektive og robuste processer.",
+      "goal": "Mere effektive og robuste processer"
+    },
+    {
+      "actor": "Konsulent",
+      "story": "Som konsulent vil jeg udvikle standarder, strukturer og arbejdsgange for at opnå mere stabil drift og bedre kvalitet.",
+      "goal": "Mere stabil drift og bedre kvalitet"
+    },
+    {
+      "actor": "Konsulent",
+      "story": "Som konsulent vil jeg støtte operative miljøer i konkrete projekter for at opnå praktiske løsninger, der virker i hverdagen.",
+      "goal": "Praktiske løsninger, der virker i hverdagen"
+    },
+    {
+      "actor": "Konsulent",
+      "story": "Som konsulent vil jeg udarbejde risikoanalyser, interessentkort og implementeringsplaner for at opnå bedre styring af komplekse projekter.",
+      "goal": "Bedre styring af komplekse projekter"
+    },
+    {
+      "actor": "Konsulent",
+      "story": "Som konsulent vil jeg opsamle læring på tværs af projekter for at opnå stærkere organisatorisk modenhed og kontinuitet.",
+      "goal": "Stærkere organisatorisk modenhed og kontinuitet"
+    },
+    {
+      "actor": "Forandringsleder",
+      "story": "Som forandringsleder vil jeg gennemføre modenhedsanalyser for at opnå indsigt i organisatoriske behov og udviklingspotentialer.",
+      "goal": "Indsigt i organisatoriske behov og udviklingspotentialer"
+    },
+    {
+      "actor": "Forandringsleder",
+      "story": "Som forandringsleder vil jeg udvikle træningsforløb, onboarding og læringspakker for at opnå bedre implementering af nye kapaciteter.",
+      "goal": "Bedre implementering af nye kapaciteter"
+    },
+    {
+      "actor": "Forandringsleder",
+      "story": "Som forandringsleder vil jeg etablere feedbackloops for at opnå løbende forbedringer og stærkere læringskultur.",
+      "goal": "Løbende forbedringer og stærkere læringskultur"
+    },
+    {
+      "actor": "Brobygger",
+      "story": "Som brobygger vil jeg oversætte Forsvarets eller kundens behov til konkrete krav for at opnå bedre samarbejde med industrien eller leverandører.",
+      "goal": "Bedre samarbejde med industrien eller leverandører"
+    },
+    {
+      "actor": "Brobygger",
+      "story": "Som brobygger vil jeg facilitere dialog mellem organisation og industri for at opnå fælles forståelse og realistiske løsninger.",
+      "goal": "Fælles forståelse og realistiske løsninger"
+    },
+    {
+      "actor": "Coach",
+      "story": "Som coach vil jeg tilbyde individuel ledercoaching for at opnå stærkere beslutningskraft, refleksion og robusthed hos ledere.",
+      "goal": "Stærkere beslutningskraft, refleksion og robusthed hos ledere"
+    },
+    {
+      "actor": "Coach",
+      "story": "Som coach vil jeg tilbyde teamcoaching for at opnå bedre samarbejde, kommunikation og fælles retning.",
+      "goal": "Bedre samarbejde, kommunikation og fælles retning"
+    },
+    {
+      "actor": "Coach",
+      "story": "Som coach vil jeg udvikle medarbejdere gennem coachingbaserede metoder for at opnå højere engagement og bedre udnyttelse af styrker.",
+      "goal": "Højere engagement og bedre udnyttelse af styrker"
+    },
+    {
+      "actor": "Kunde",
+      "story": "Som kunde vil jeg forstå LeanMinds tilgang og værdiskabelse for at opnå tryghed i samarbejdet.",
+      "goal": "Tryghed i samarbejdet"
+    },
+    {
+      "actor": "Kunde",
+      "story": "Som kunde vil jeg modtage konkrete, anvendelige løsninger for at opnå forbedringer, der kan mærkes i hverdagen.",
+      "goal": "Forbedringer, der kan mærkes i hverdagen"
+    },
+    {
+      "actor": "Kunde",
+      "story": "Som kunde vil jeg opleve respekt for min kultur, mine rammer og mine operative realiteter for at opnå et samarbejde, der fungerer i praksis.",
+      "goal": "Et samarbejde, der fungerer i praksis"
+    },
+    {
+      "actor": "Samarbejdspartner",
+      "story": "Som samarbejdspartner vil jeg forstå LeanMinds rolle og kompetencer for at opnå effektiv koordinering og fælles fremdrift.",
+      "goal": "Effektiv koordinering og fælles fremdrift"
+    },
+    {
+      "actor": "Samarbejdspartner",
+      "story": "Som samarbejdspartner vil jeg kunne bidrage med min faglighed i projekter for at opnå bedre helhedsløsninger.",
+      "goal": "Bedre helhedsløsninger"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Founder",
+      "description": "Overordnet ansvarlig for LeanMinds brand, strategi, relationer og forretningsudvikling."
+    },
+    {
+      "name": "Konsulent",
+      "description": "Arbejder med procesoptimering, analyse, facilitering, implementering og projektstøtte i organisationer."
+    },
+    {
+      "name": "Forandringsleder",
+      "description": "Sikrer organisatorisk modenhed, træning, implementering og forankring af nye kapaciteter."
+    },
+    {
+      "name": "Coach",
+      "description": "Understøtter ledere, teams og medarbejdere gennem coaching, refleksion og kompetenceudvikling."
+    },
+    {
+      "name": "Brobygger",
+      "description": "Skaber forståelse og samarbejde mellem Forsvaret, industrien, leverandører eller andre eksterne aktører."
+    },
+    {
+      "name": "Kunde",
+      "description": "Organisationer i offentlig eller privat sektor, der ønsker bedre processer, stærkere kultur og mere robust drift."
+    },
+    {
+      "name": "Samarbejdspartner",
+      "description": "Eksterne eksperter, konsulenter eller fagpersoner, der kan inddrages i projekter efter behov."
+    },
+    {
+      "name": "Bruger",
+      "description": "Ledere, medarbejdere, specialister og operative enheder, der påvirkes af forbedringer og implementering.",
+      "note": "Internt i kundens organisation"
+    }
+  ]
+}
