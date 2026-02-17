@@ -47,7 +47,8 @@
         <section class="content-section contact-page-form">
             <div class="content-frame frame--pink contact-form-full">
                 <h2>Send me a message</h2>
-                <form class="contact-form" id="contactForm" action="mailto:hannah@leanmind.dk" method="post" enctype="text/plain">
+                <form class="contact-form" id="contactForm" action="../send-kontakt.php" method="post">
+                    <input type="hidden" name="lang" value="en">
                     <div class="form-group">
                         <label for="name">Name *</label>
                         <input type="text" id="name" name="name" required>
