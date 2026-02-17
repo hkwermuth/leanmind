@@ -62,7 +62,7 @@ nav {
   gap: 16px;
 }
 .logo { display: inline-flex; align-items: center; text-decoration: none; }
-.logo img { height: 66px; width: auto; display: block; }
+.logo img { height: 132px; width: auto; display: block; }
 
 .nav-menu {
   list-style: none;
@@ -374,7 +374,7 @@ footer {
   }
   .nav-menu.active { left: 0; }
   .nav-menu a { width: 100%; text-align: center; padding: 14px 12px; }
-  .logo img { height: 52px; }
+  .logo img { height: 104px; }
 }
 
 @media (max-width: 520px) {
